@@ -1,3 +1,32 @@
+"""
+This module provides implementations of the main activation functions used in neural networks. Each activation function is represented as a Python class with two methods: `predict` and `derivative`.
+
+Classes:
+    Sigmoid: Implements the Sigmoid activation function.
+        Methods:
+            predict(x): Computes the Sigmoid activation of the input x.
+            derivative(x): Computes the derivative of the Sigmoid function at x.
+
+    Tanh: Implements the hyperbolic tangent (tanh) activation function.
+        Methods:
+            predict(x): Computes the tanh activation of the input x.
+            derivative(x): Computes the derivative of the tanh function at x.
+
+    ReLU: Implements the Rectified Linear Unit (ReLU) activation function.
+        Methods:
+            predict(x): Computes the ReLU activation of the input x.
+            derivative(x): Computes the derivative of the ReLU function at x.
+
+    LeakyReLU: Implements the Leaky Rectified Linear Unit (LeakyReLU) activation function.
+        Methods:
+            predict(x): Computes the LeakyReLU activation of the input x.
+            derivative(x): Computes the derivative of the LeakyReLU function at x.
+
+    ELU: Implements the Exponential Linear Activation (ELA) function.
+        Methods:
+            predict(x): Computes the ELA activation of the input x.
+            derivative(x): Computes the derivative of the ELA function at x.
+"""
 import numpy as np
 
 class Sigmoid:
